@@ -95,8 +95,7 @@ public class LoginTest extends BaseTest {
         long startTime = System.currentTimeMillis();
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//*[@id=\"inventory_filter_container\"]/div")));
         long endTime = System.currentTimeMillis();
-        boolean result;
-        result = endTime - startTime < 5;
+        boolean result = endTime - startTime < 5;
         Assert.assertFalse(result);
     }
 }
